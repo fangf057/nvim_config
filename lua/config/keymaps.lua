@@ -8,8 +8,7 @@ vim.keymap.set("n", "<leader>ft", ":FloatermToggle<CR>", { desc = "Toggle floati
 vim.keymap.set("n", "<leader>fn", ":FloatermNew<CR>", { desc = "New floating terminal" })
 
 -- 终端 esc 退出
-vim.api.nvim_set_keymap("t", "<Esc>", "<C-\\><C-n>", { noremap = true, silent = true })
-
+-- vim.api.nvim_set_keymap("t", "<Esc>", "<C-\\><C-n>", { noremap = true, silent = true })
 -- tab 补全
 
 if not vim.g.vscode then
