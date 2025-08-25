@@ -11,17 +11,17 @@ vim.keymap.set("n", "<leader>fn", ":FloatermNew<CR>", { desc = "New floating ter
 -- vim.api.nvim_set_keymap("t", "<Esc>", "<C-\\><C-n>", { noremap = true, silent = true })
 -- tab 补全
 
-if not vim.g.vscode then
-  local cmp = require("cmp")
-  cmp.setup({
-    mapping = {
-      ["<Tab>"] = cmp.mapping(function(fallback)
-        if cmp.visible() then
-          cmp.confirm({ select = true })
-        else
-          fallback() -- 未触发补全时，执行默认 Tab 行为（缩进）
-        end
-      end, { "i", "s" }),
-    },
-  })
-end
+-- if not vim.g.vscode then
+--   local cmp = require("cmp")
+--   cmp.setup({
+--     mapping = {
+--       ["<Tab>"] = cmp.mapping(function(fallback)
+--         if cmp.visible() then
+--           cmp.confirm({ select = true })
+--         else
+--           fallback() -- 未触发补全时，执行默认 Tab 行为（缩进）
+--         end
+--       end, { "i", "s" }),
+--     },
+--   })
+-- end
